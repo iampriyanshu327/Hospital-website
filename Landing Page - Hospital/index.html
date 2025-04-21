@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaf Hospital</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="bg-primary text-white py-2 d-none d-md-block">
+    <div class="container d-flex justify-content-between">
+      <div><i class="fas fa-phone-alt me-2"></i>+91 94435 12345</div>
+      <div><i class="fas fa-clock me-2"></i>Mon-Fri: 8:00 AM - 7:00 PM</div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/leaf-logo.avif" alt="Leaf Hospital" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-3 fs-5 text-dark" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 fs-5 text-dark" href="#find-us">Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 fs-5 text-dark" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 fs-5 text-dark" href="#career">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 fs-5 text-dark" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <!-- Appointment Button with hover effect and spacing -->
+        <a href="#" class="btn btn-primary ms-lg-4 px-4 py-2 fs-5 fw-bold rounded-pill shadow-sm" style="transition: all 0.3s;">
+          Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section with Carousel -->
+<!-- Hero Section with Carousel -->
+<section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active hero-slide" style="background-image: url('https://images.pexels.com/photos/6129044/pexels-photo-6129044.jpeg');">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row">
+          <!-- No need for extra column or row here, as the caption box will be positioned absolutely -->
+        </div>
+      </div>
+      <!-- Caption Box with Background and Shadow in the Right Corner -->
+      <div class="caption-box p-4 bg-dark text-white rounded shadow-lg">
+        <h1 class="display-4 fw-bold">Quality Healthcare For Everyone</h1>
+        <p class="lead mb-4">Advanced treatments & compassionate care for all patients.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="btn btn-primary btn-lg shadow">Our Services</a>
+          <a href="#" class="btn btn-outline-light btn-lg shadow">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item hero-slide" style="background-image: url('https://images.pexels.com/photos/7089617/pexels-photo-7089617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row">
+          <!-- No need for extra column or row here, as the caption box will be positioned absolutely -->
+        </div>
+      </div>
+      <!-- Caption Box with Background and Shadow in the Right Corner -->
+      <div class="caption-box p-4 bg-dark text-white rounded shadow-lg">
+        <h1 class="display-4 fw-bold">Excellence in Medical Innovation</h1>
+        <p class="lead mb-4">Technology, expertise & commitment—our promise to you.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="btn btn-success btn-lg shadow">Explore Facilities</a>
+          <a href="#" class="btn btn-outline-light btn-lg shadow">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+
+
+
+
+  <section id="find-us" class="py-5 bg-light">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2 class="fw-bold mb-4">Find a Department & Doctor</h2>
+          <p class="lead text-muted">Search for the department or doctor you're looking for. Select the department first, then choose a doctor from that department.</p>
+        </div>
+      </div>
+  
+      <!-- Search Form -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm border-0">
+            <div class="card-body p-5">
+              <form id="searchForm">
+                <div class="row g-3">
+                  <!-- Department Dropdown -->
+                  <div class="col-md-6">
+                    <label for="department" class="form-label">Select Department</label>
+                    <select class="form-select" id="department" required>
+                      <option value="" selected disabled>Select a Department</option>
+                      <option value="cardiology">Cardiology</option>
+                      <option value="neurology">Neurology</option>
+                      <option value="orthopedics">Orthopedics</option>
+                      <option value="pediatrics">Pediatrics</option>
+                      <option value="oncology">Oncology</option>
+                      <option value="gynecology">Gynecology</option>
+                      <option value="emergency">Emergency</option>
+                      <option value="general-surgery">General Surgery</option>
+                    </select>
+                  </div>
+  
+                  <!-- Doctor Dropdown -->
+                  <div class="col-md-6">
+                    <label for="doctor" class="form-label">Select Doctor</label>
+                    <select class="form-select" id="doctor" required>
+                      <option value="" selected disabled>Select a Doctor</option>
+                      <option value="cardiologist">Cardiologist</option>
+                      <option value="neurologist">Neurologist</option>
+                      <option value="orthopedist">Orthopedist</option>
+                      <option value="pediatrist">Pediatrist</option>
+                      <option value="oncologist">Oncologist</option>
+                      <option value="gynecologist">Gynecologist</option>
+                      <option value="Optimal available">Optimally available</option>
+                      <option value="generic surgeon">Generic Surgeon</option>
+                    </select>
+                  </div>
+  
+                  <!-- Search Button -->
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Search Results (this can be populated dynamically after the form submission) -->
+      <div class="row mt-5" id="searchResults" style="display: none;">
+        <div class="col-12 text-center">
+          <h4 class="fw-bold">Doctors Available</h4>
+          <p class="lead text-muted">Here are the doctors available in your selected department:</p>
+        </div>
+        <!-- Doctor List (to be dynamically populated) -->
+        <div class="col-12">
+          <div id="doctorList" class="row g-4">
+            <!-- Example Doctor Card -->
+            <!-- Will be populated dynamically based on department selection -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h6 class="text-muted">Why Leaf Hospital?</h6>
+          <h2 class="fw-semibold mb-4">
+            Eminence in Healthcare: <br />
+            Where Excellence and Care <br />
+            Converge for Optimal Health <br />
+            Outcomes.
+          </h2>
+  
+          <!-- Buttons -->
+          <div class="d-flex gap-3 mb-4">
+            <a href="#" class="btn btn-outline-dark btn-rounded">
+              <i class="bi bi-play-circle-fill text-primary"></i> Watch our Video
+            </a>
+            <div class="icon-circle">
+              <i class="bi bi-geo-alt"></i> Locate Us
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <p class="mb-4">
+            Leaf Hospital shines as a beacon of superior healthcare, widely recognized across the region. Our unwavering commitment to delivering exceptional care has attracted a team of eminent, highly skilled medical professionals. With a relentless pursuit of excellence, we uphold the highest standards of treatment, securing the best possible health outcomes.
+          </p>
+  
+          <!-- Stats -->
+          <div class="row text-center text-md-start">
+            <div class="col-4">
+              <div class="stats-number">2600+</div>
+              <div class="stats-label">Bed Capacity</div>
+            </div>
+            <div class="col-4 border-start border-end">
+              <div class="stats-number">534</div>
+              <div class="stats-label">Smart ICUs<br>and Critical Care Beds</div>
+            </div>
+            <div class="col-4">
+              <div class="stats-number">64</div>
+              <div class="stats-label">Fully Networked<br>Modular Operation Theatres</div>
+            </div>
+          </div>
+  
+          <!-- Link -->
+          <div class="mt-4">
+            <a href="#" class="fw-semibold text-decoration-none">
+              Learn more about us <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Our Services</h2>
+        <p class="lead mb-5">We offer a wide range of medical services to meet all your healthcare needs</p>
+        <div class="row g-4">
+            <!-- Service Card 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="service-icon mb-3">
+                    <i class="fas fa-heartbeat fa-2x text-primary"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Cadiology</h5>
+                  <p class="card-text">Expert heart care and treatment options, including diagnostic services and rehabilitation.</p>
+                  <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="service-icon mb-3">
+                    <i class="fas fa-brain fa-2x text-primary"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Neurology</h5>
+                  <p class="card-text">Top-edge brain and neuro treatment options, including diagnostic services and operations.</p>
+                  <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-bone fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Orthopedics</h5>
+                        <p>Comprehensive care for musculoskeletal issues with cutting-edge surgical and non-surgical treatments.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pediatrics -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-baby fa-2x text-primary"></i>
+                </div>
+                <h5 class="card-title fw-bold">Pediatrics</h5>
+                <p class="card-text">Compassionate care for infants, children, and adolescents.</p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oncology -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-microscope fa-2x text-primary"></i>
+                </div>
+                <h5 class="card-title fw-bold">Oncology</h5>
+                <p class="card-text">Complete cancer treatment including chemotherapy and surgery.</p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-ambulance fa-2x text-primary"></i>
+                </div>
+                <h5 class="card-title fw-bold">Emergency Care</h5>
+                <p class="card-text">24/7 emergency services with rapid response and expert care.</p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-4">Build Your Career in Healthcare</h2>
+        <p class="lead">At Leaf Hospital, we believe our employees are our greatest asset.</p>
+        <p>We offer competitive salaries, comprehensive benefits, and opportunities for growth in a supportive environment that values diversity and inclusion.</p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="#open-positions" class="btn btn-primary">View Open Positions</a>
+          <a href="#benefits" class="btn btn-outline-primary">Our Benefits</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/leaf-logo.png" alt="Medical Team" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Employee Benefits</h2>
+      <p class="lead">We take care of our team members</p>
+    </div>
+    <div class="row g-4">
+      <!-- Single Benefit -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:60px; height:60px;">HI</div>
+            </div>
+            <h5 class="fw-bold">Health Insurance</h5>
+            <p>Medical, dental, and vision coverage for you and your family.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat for each benefit -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:60px; height:60px;">ED</div>
+            </div>
+            <h5 class="fw-bold">Education Support</h5>
+            <p>Tuition reimbursement and education opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:60px; height:60px;">PT</div>
+            </div>
+            <h5 class="fw-bold">Paid Time Off</h5>
+            <p>Generous vacation, sick leave, and holiday benefits.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add 3 more benefits similarly -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:60px; height:60px;">RP</div>
+            </div>
+            <h5 class="fw-bold">Retirement Plans</h5>
+            <p>401(k) with company matching.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:60px; height:60px;">FS</div>
+            </div>
+            <h5 class="fw-bold">Family Support</h5>
+            <p>Parental leave and childcare assistance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width:60px; height:60px;">WL</div>
+            </div>
+            <h5 class="fw-bold">Wellness Programs</h5>
+            <p>Fitness center and wellness initiatives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hospital Achievements & Timeline Section -->
+    <section id="career" class="py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fw-bold mb-4">Our 25-Year Journey of Excellence</h2>
+            <p class="lead text-muted">For the past 25 years, Leaf Hospital has been a pillar of healthcare innovation, providing high-quality care and making strides in medical research and patient satisfaction. Here’s a look back at some of our key achievements.</p>
+          </div>
+        </div>
+    
+        <!-- Timeline (Card Format) -->
+        <div class="row">
+          <!-- Timeline Item 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">1998: Founding of Leaf Hospital</h5>
+                <p>Leaf Hospital opened its doors in 1998 with the vision to provide compassionate and exceptional care to the community. Our journey began with a small team of dedicated healthcare professionals.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">2005: Expansion of the Facility</h5>
+                <p>In 2005, Leaf Hospital expanded its facilities, adding new wings to accommodate growing patient demand. This expansion also included state-of-the-art diagnostic equipment, enhancing the quality of care.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">2010: Recognition for Excellence</h5>
+                <p>In 2010, Leaf Hospital was awarded the "Best Hospital for Patient Care" award, a testament to our commitment to providing world-class healthcare services to our community.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">2015: Launch of Specialized Cardiology Department</h5>
+                <p>Recognizing the increasing need for specialized cardiac care, Leaf Hospital launched a state-of-the-art Cardiology Department, offering a wide range of heart health services including surgery, rehabilitation, and diagnostics.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">2018: National Accreditation Achieved</h5>
+                <p>In 2018, Leaf Hospital achieved national accreditation, solidifying our commitment to maintaining the highest standards of healthcare and operational excellence.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 6 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">2023: Expansion to a Regional Medical Hub</h5>
+                <p>In 2023, Leaf Hospital expanded to become a regional medical hub, offering comprehensive services ranging from general healthcare to specialized treatments in multiple fields, including oncology, orthopedics, and pediatrics.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 7 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">2025: A Commitment to the Future</h5>
+                <p>As we enter our 25th year, we remain dedicated to improving healthcare outcomes, embracing new medical technologies, and serving our community with compassion and care. The future is bright, and we’re ready for the next chapter.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Appointment Booking Section -->
+<section id="contact-us" class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="fw-bold mb-4">Book an Appointment</h2>
+        <p class="lead text-muted">Fill in your details and select a doctor to schedule your appointment.</p>
+      </div>
+    </div>
+
+    <!-- Appointment Booking Form -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="application shadow-sm border-0">
+          <div class="application-body p-5">
+            <form id="appointmentForm">
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
+                </div>
+
+                <!-- Department Dropdown -->
+                <div class="col-md-6">
+                  <label for="department" class="form-label">Select Department</label>
+                  <select class="form-select" id="department" required>
+                    <option value="" selected disabled>Select a Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="oncology">Oncology</option>
+                    <option value="gynecology">Gynecology</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="general-surgery">General Surgery</option>
+                  </select>
+                </div>
+
+                <!-- Doctor Dropdown -->
+                <div class="col-md-6">
+                  <label for="doctor" class="form-label">Select Doctor</label>
+                  <select class="form-select" id="doctor" required>
+                    <option value="" selected disabled>Select a Doctor</option>
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="neurologist">Neurologist</option>
+                    <option value="orthopedist">Orthopedist</option>
+                    <option value="pediatrist">Pediatrist</option>
+                    <option value="oncologist">Oncologist</option>
+                    <option value="gynecologist">Gynecologist</option>
+                    <option value="Optimal available">Optimally available</option>
+                    <option value="generic surgeon">Generic Surgeon</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="col-md-6">
+                  <label for="date" class="form-label">Preferred Appointment Date</label>
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="col-md-6">
+                  <label for="time" class="form-label">Preferred Time</label>
+                  <input type="time" class="form-control" id="time" required />
+                  <small class="text-danger" id="time-error" style="display:none;">Appointments can only be made between 8:00 AM and 6:00 PM.</small>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg">Book Appointment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- About Us Section -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+          <h2 class="fw-bold">About Us</h2>
+          <p class="lead">Leaf Hospital is committed to providing world-class healthcare services with a focus on compassion and excellence. Our team of experts works tirelessly to ensure your health and well-being.</p>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>About Us</h5>
+          <p>Leaf Hospital has been providing exceptional healthcare services to our community for over 1425 years.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="career.html" class="text-white text-decoration-none">Career</a></li>
+            <li><a href="contactus.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt me-2"></i> Jabalpur, Madhya Pradesh</li>
+            <li><i class="fas fa-phone-alt me-2"></i> +91 94435 12345</li>
+            <li><i class="fas fa-envelope me-2"></i> info@leafhospital.com</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="bg-light">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 Leaf Hospital. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.service-icon {
+    font-size: 3rem;
+    color: #007bff;
+}
+.service-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.hero-section {
+    background: url('images/hospital-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+  #heroCarousel .carousel-item h1, 
+  #heroCarousel .carousel-item p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .caption-box {
+    position: absolute;
+    top: 20px; /* Adjust this value to move the box down from the top */
+    right: 20px; /* Adjust this value to move the box from the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Box shadow to create the shadow effect */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  /* Optional: Adjust text shadow if needed to enhance readability */
+  .caption-box h1, .caption-box p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Padding for spacing inside the caption box */
+  .caption-box {
+    padding: 20px;
+  }

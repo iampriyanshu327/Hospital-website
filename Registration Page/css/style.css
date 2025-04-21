@@ -1,0 +1,93 @@
+body {
+    background-image: url('https://images.pexels.com/photos/19300960/pexels-photo-19300960/free-photo-of-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Card Container */
+  .card {
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: rgba(38, 51, 39, 0.7); /* Semi-transparent background */
+    border: none;
+  }
+
+  /* Header Styles */
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+  }
+
+  .header-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  /* Form Elements */
+  .form-control, .form-select {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+
+  .form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #eaeaea;
+  }
+
+  .form-check-label {
+    color: #eaeaea;
+    font-weight: normal;
+  }
+
+  /* Submit Button */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+  }
+
+  /* Container & Form Section Layout */
+  .container {
+    max-width: 900px;
+    padding: 30px;
+  }
+
+  .form-section {
+    margin-bottom: 30px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+
+    .col-md-6, .col-md-4 {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaCare Hospital</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/metacare-logo.png" alt="MetaCare Hospital" height="60">
+      </a>
+  
+      <div class="d-flex align-items-center ms-auto">
+        <div class="me-3">
+          <i class="bi bi-geo-alt"></i> Jabalpur
+        </div>
+        <div class="me-3">
+          <i class="bi bi-person-circle"></i> <a href="#" class="text-decoration-none text-dark">Patient Login</a>
+        </div>
+        <a href="contactus.html">
+          <button class="btn btn-outline-success rounded-pill px-4">Booking Assistance</button>
+          </a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu bg-white">
+              <li><a class="dropdown-item text-dark" href="aboutus.html">Our Story</a></li>
+              <li><a class="dropdown-item text-dark" href="#hospital-achievements">Vision & Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Hospitals</a>
+            <ul class="dropdown-menu bg-white">
+              <li><a class="dropdown-item text-dark" href="#">Jabalpur</a></li>
+              <li><a class="dropdown-item text-dark" href="#">Bhopal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Our Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Departments</a>
+            <ul class="dropdown-menu bg-white">
+              <li><a class="dropdown-item text-dark" href="services.html">Cardiology</a></li>
+              <li><a class="dropdown-item text-dark" href="services.html">Neurology</a></li>
+              <li><a class="dropdown-item text-dark" href="services.html">Orthopedics</a></li>
+              <li><a class="dropdown-item text-dark" href="services.html">Pediatrics</a></li>
+              <li><a class="dropdown-item text-dark" href="services.html">Oncology</a></li>
+              <li><a class="dropdown-item text-dark" href="services.html">Emergency</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">International</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Call Us</a>
+            <ul class="dropdown-menu bg-white">
+              <li><a class="dropdown-item text-dark" href="#">Jabalpur: +91-1234567890</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section (Carousel) -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/hospital.png" class="d-block w-100" alt="Hospital">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Top-tier research<br>Infrastructure</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/second.png" alt="Hospital">
+        <div class="carousel-caption text-start">
+          <h1>Empowering you to live<br>a healthier life</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/third.png" alt="Hospital">
+        <div class="carousel-caption text-start">
+          <h1>Equipped with<br>modern technologies</h1>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start content2" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://www.shutterstock.com/image-photo/portrait-man-doctor-standing-team-600nw-2478537933.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+
+          <div class="col-lg-6 content">
+            <h3>About Us</h3>
+            <p>
+              At MetaCare Hospital, we provide compassionate, patient-centered care with advanced medical technology to ensure your well-being through personalized treatment and exceptional service.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check text-success"></i>
+                <div>
+                  <h5>Expert Medical Team:</h5>
+                  <p> Our skilled doctors, nurses, and specialists work together to deliver exceptional, personalized care.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-pump-medical text-success"></i>
+                <div>
+                  <h5>State-of-the-Art Facilities:</h5>
+                  <p>Equipped with the latest technology to ensure accurate diagnoses and effective treatments.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-heart-circle-xmark text-success"></i>
+                <div>
+                  <h5>Patient-Centered Approach: </h5>
+                  <p>We prioritize your comfort, safety, and well-being in every step of your healthcare journey.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="interests">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <!-- Left Column -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h6 class="text-muted fw-semibold">Why MetaCare Hospital?</h6>
+            <h2 class="fw-semibold mb-4">
+              Eminence in Healthcare: <br />
+              Where Excellence and Care <br />
+              Converge for Optimal Health <br />
+              Outcomes.
+            </h2>
+    
+            <!-- Buttons -->
+            <div class="d-flex gap-3 mb-4">
+              <a href="#" class="btn btn-outline-success btn-rounded">
+                <i class="bi bi-play-circle-fill text-success"></i> Watch our Video
+              </a>
+              <div class="icon-circle">
+                <i class="bi bi-geo-alt"></i> Locate Us
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right Column -->
+          <div class="col-md-6">
+            <p class="mb-4">
+              MetaCare Hospital shines as a beacon of superior healthcare, widely recognized across the region. Our unwavering commitment to delivering exceptional care has attracted a team of eminent, highly skilled medical professionals. With a relentless pursuit of excellence, we uphold the highest standards of treatment, securing the best possible health outcomes.
+            </p>
+    
+            <!-- Stats -->
+            <div class="row text-center text-md-start">
+              <div class="col-4">
+                <div class="stats-number custom-heading fw-semibold">2600+</div>
+                <div class="stats-label">Bed Capacity</div>
+              </div>
+              <div class="col-4 border-start border-end">
+                <div class="stats-number custom-heading fw-semibold">534</div>
+                <div class="stats-label">Smart ICUs<br>and Critical Care Beds</div>
+              </div>
+              <div class="col-4">
+                <div class="stats-number custom-heading fw-semibold">64</div>
+                <div class="stats-label">Fully Networked<br>Modular Operation Theatres</div>
+              </div>
+            </div>
+    
+            <!-- Link -->
+            <div class="mt-4">
+              <a href="#" class="fw-semibold text-decoration-none">
+                Learn more about us <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="about-us" class="py-5">
+  <div class="container">
+    
+    <!-- Meet the Team Section -->
+    <div class="text-center mb-5">
+      <h3 class="fw-bold mb-4 custom-heading">Meet Our Team</h3>
+      <p class="lead text-muted">Our team of dedicated doctors, nurses, and staff work together to provide the best care possible for our patients.</p>
+    </div>
+
+    <div class="row">
+      <!-- Doctor 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="images/male-doctor.webp" alt="Dr. John Doe" class="card-img-top rounded-circle" />
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Dr. John Cena</h5>
+            <p class="text-muted">Chief Cardiologist</p>
+            <p>Dr. John has been leading our Cardiology Department for over 15 years, offering innovative treatment options to patients with heart conditions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="images/female-doctor1.jpeg" alt="Dr. Sarah White" class="card-img-top rounded-circle" />
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Dr. Sarah Tendulkar</h5>
+            <p class="text-muted">Head of Neurology</p>
+            <p>Dr. Sarah leads our Neurology Department and specializes in brain and nervous system disorders, with a focus on patient care and cutting-edge treatments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="images/female-doctor2.jpeg" alt="Dr. Emily Davis" class="card-img-top rounded-circle" />
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Dr. Emily Davis</h5>
+            <p class="text-muted">Orthopedic Surgeon</p>
+            <p>Dr. Emily is an expert in joint and bone health, leading our Orthopedic Department and providing comprehensive care for all musculoskeletal injuries and conditions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+  
+
+
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4 custom-heading">Our Services</h2>
+        <p class="lead mb-5">We offer a wide range of medical services to meet all your healthcare needs</p>
+        <div class="row g-4">
+            <!-- Service Card 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="service-icon mb-3">
+                    <i class="fas fa-heartbeat fa-2x text-success"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Cadiology</h5>
+                  <p class="card-text">Expert heart care and treatment options, including diagnostic services and rehabilitation.</p>
+                  <a href="#" class="btn btn-outline-success">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="service-icon mb-3">
+                    <i class="fas fa-brain fa-2x text-success"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Neurology</h5>
+                  <p class="card-text">Top-edge brain and neuro treatment options, including diagnostic services and operations.</p>
+                  <a href="#" class="btn btn-outline-success">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-bone fa-2x text-success"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Orthopedics</h5>
+                        <p>Comprehensive care for musculoskeletal issues with cutting-edge surgical and non-surgical treatments.</p>
+                        <a href="#" class="btn btn-outline-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pediatrics -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-baby fa-2x text-success"></i>
+                </div>
+                <h5 class="card-title fw-bold">Pediatrics</h5>
+                <p class="card-text">Compassionate care for infants, children, and adolescents.</p>
+                <a href="#" class="btn btn-outline-success">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oncology -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-microscope fa-2x text-success"></i>
+                </div>
+                <h5 class="card-title fw-bold">Oncology</h5>
+                <p class="card-text">Complete cancer treatment including chemotherapy and surgery.</p>
+                <a href="#" class="btn btn-outline-success">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-ambulance fa-2x text-success"></i>
+                </div>
+                <h5 class="card-title fw-bold">Emergency Care</h5>
+                <p class="card-text">24/7 emergency services with rapid response and expert care.</p>
+                <a href="#" class="btn btn-outline-success">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="latest-news" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold custom-heading">Latest News from the Industry</h2>
+      <p class="text-muted">Stay updated with the most recent advancements and insights in healthcare.</p>
+    </div>
+
+    <div class="row">
+      <!-- News Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card news-card h-100">
+          <img src="images/cancer-news.jpeg" class="card-img-top" alt="News 1">
+          <div class="card-body">
+            <h5 class="card-title">Breakthrough in Cancer Research</h5>
+            <p class="card-text">Scientists have developed a new therapy that shows promise in fighting resistant tumors...</p>
+            <a href="#" class="btn btn-sm btn-outline-success">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card news-card h-100">
+          <img src="images/ai-news.jpg" class="card-img-top" alt="News 2">
+          <div class="card-body">
+            <h5 class="card-title">AI in Radiology</h5>
+            <p class="card-text">Artificial Intelligence is improving diagnostic accuracy in X-rays and CT scans...</p>
+            <a href="#" class="btn btn-sm btn-outline-success">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card news-card h-100">
+          <img src="images/mental-news.webp" class="card-img-top" alt="News 3">
+          <div class="card-body">
+            <h5 class="card-title">Mental Health Awareness</h5>
+            <p class="card-text">Global health bodies are emphasizing the importance of mental wellness in 2025...</p>
+            <a href="#" class="btn btn-sm btn-outline-success">Read More</a>
+            <div class="text-end mt-4">
+              <a href="#" class="btn-view-all text-success">View All &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+    <!-- Appointment Booking Section -->
+    <section id="appointment" class="py-5 bg-light">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fw-bold mb-4 custom-heading">Book an Appointment</h2>
+            <p class="lead text-muted">Fill in your details and select a doctor to schedule your appointment.</p>
+          </div>
+        </div>
+    
+    <!-- Appointment Booking Form -->
+    <div class="row appoint-app justify-content-center">
+      <div class="col-lg-8">
+        <div class="application shadow-sm border-0">
+          <div class="application-body p-5">
+            <form id="appointmentForm">
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required />
+                </div>
+
+                <!-- Department Dropdown -->
+                <div class="col-md-6">
+                  <label for="department" class="form-label">Select Department</label>
+                  <select class="form-select" id="department" required>
+                    <option value="" selected disabled>Select a Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="oncology">Oncology</option>
+                    <option value="gynecology">Gynecology</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="general-surgery">General Surgery</option>
+                  </select>
+                </div>
+
+                <!-- Doctor Dropdown -->
+                <div class="col-md-6">
+                  <label for="doctor" class="form-label">Select Doctor</label>
+                  <select class="form-select" id="doctor" required>
+                    <option value="" selected disabled>Select a Doctor</option>
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="neurologist">Neurologist</option>
+                    <option value="orthopedist">Orthopedist</option>
+                    <option value="pediatrist">Pediatrist</option>
+                    <option value="oncologist">Oncologist</option>
+                    <option value="gynecologist">Gynecologist</option>
+                    <option value="Optimal available">Optimally available</option>
+                    <option value="generic surgeon">Generic Surgeon</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="col-md-6">
+                  <label for="date" class="form-label">Preferred Appointment Date</label>
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="col-md-6">
+                  <label for="time" class="form-label">Preferred Time</label>
+                  <input type="time" class="form-control" id="time" required />
+                  <small class="text-danger" id="time-error" style="display:none;">Appointments can only be made between 8:00 AM and 6:00 PM.</small>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-success btn-lg">Book Appointment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5 custom-heading fw-bold">Frequently Asked Questions</h1>
+
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What services does MetaCare Hospital offer?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            MetaCare Hospital offers a wide range of services including emergency care, surgeries, outpatient services, diagnostics, and specialized treatments.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I book an appointment?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can book an appointment online through our website or by calling our 24/7 helpline at 1800-MetaCare-HOSPITAL.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Do you accept health insurance plans?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we work with most major insurance providers. Please bring your insurance card when you visit.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Where is MetaCare Hospital located?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We are located at 123 Green Street, New City. Visit our Contact page for maps and directions.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            What are the visiting hours?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Visiting hours are from 10 AM to 8 PM every day. Special ICU rules apply, check with the staff for details.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            How can I access my medical records?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can request your medical records online or through our Medical Records Department during business hours.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Are emergency services available 24/7?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! Our emergency department is open 24 hours a day, 7 days a week.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            What COVID-19 safety measures are in place?
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We follow strict sanitization, social distancing, mask mandates, and provide COVID-19 testing at entry points.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            How do I apply for a job at MetaCare Hospital?
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Visit our Careers page to apply for open positions. We welcome talented and compassionate professionals!
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            Can I volunteer at MetaCare Hospital?
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! We have volunteer programs. Please contact our Volunteer Services Department for more information.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>About Us</h5>
+          <p>MetaCare Hospital has been providing exceptional healthcare services to our community for over 25 years.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="index.html" class="text-white text-decoration-none">Career</a></li>
+            <li><a href="contactus.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt me-2"></i> Jabalpur, Madhya Pradesh</li>
+            <li><i class="fas fa-phone-alt me-2"></i> +91 94435 12345</li>
+            <li><i class="fas fa-envelope me-2"></i> info@MetaCarehospital.com</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="bg-light">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 MetaCare Hospital. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
